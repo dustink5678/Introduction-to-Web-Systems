@@ -153,6 +153,16 @@ body {
   cursor: default;
 }
 
+.nav-btn-link {
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.nav-btn-link:hover {
+  background-color: var(--color-gray-100);
+}
+
 .nav-btn-icon {
   width: 1rem;
   height: 1rem;
