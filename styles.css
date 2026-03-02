@@ -156,11 +156,13 @@ body {
 .nav-btn-link {
   text-decoration: none;
   cursor: pointer;
+  background-color: var(--color-garnet);
+  color: white;
   transition: background-color 0.2s;
 }
 
 .nav-btn-link:hover {
-  background-color: var(--color-gray-100);
+  background-color: var(--color-garnet-dark);
 }
 
 .nav-btn-icon {
@@ -449,10 +451,14 @@ main {
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 9999px;
-  border: 1px solid var(--color-gray-200);
-  background-color: var(--color-gray-50);
-  color: var(--color-gray-600);
+  background-color: var(--color-garnet);
+  color: white;
   text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.back-link:hover {
+  background-color: var(--color-garnet-dark);
 }
 
 .back-link svg {
@@ -773,10 +779,14 @@ main {
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 9999px;
-  border: 1px solid var(--color-gray-200);
-  background-color: var(--color-gray-50);
-  color: var(--color-gray-600);
+  background-color: var(--color-garnet);
+  color: white;
   text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.analytics-back-link:hover {
+  background-color: var(--color-garnet-dark);
 }
 
 .analytics-back-link svg {
