@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Author: Dustin King -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Analytics | Gamecock Consulting Club</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-wrapper">
+  <header class="site-header">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <div class="nav-flex">
+        <a href="index.html" class="nav-logo-link">
+          <img src="GCC Logo.png" alt="GCC Logo" class="nav-logo-img">
+          <span class="nav-title">Gamecock Consulting Club</span>
+        </a>
+        <div class="nav-right">
+          <span class="nav-user-name">Dustin King</span>
+          <a href="analytics.html" class="nav-btn nav-btn-link">
+            <svg class="nav-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="3 17 9 11 13 15 21 7" />
+              <polyline points="14 7 21 7 21 14" />
+            </svg>
+            <span class="nav-btn-text">Analytics</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="analytics-main">
+    <!-- Header -->
+    <section class="analytics-header" aria-labelledby="analytics-heading">
+      <a href="index.html" class="analytics-back-link" aria-label="Back to dashboard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+      </a>
+      <div class="analytics-title-group">
+        <h1 id="analytics-heading" class="analytics-title">Admin Analytics</h1>
+        <p class="analytics-subtitle">Track member activity across firms and learning paths.</p>
+      </div>
+    </section>
+
+    <!-- Stats cards -->
+    <section class="analytics-stats-grid" aria-label="Summary statistics">
+      <article class="analytics-card analytics-card-users">
+        <div class="analytics-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="3" />
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+          </svg>
+        </div>
+        <div>
+          <p class="analytics-card-label">Total Users</p>
+          <p class="analytics-card-value">3</p>
+        </div>
+      </article>
+
+      <article class="analytics-card analytics-card-active">
+        <div class="analytics-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="3 17 9 11 13 15 21 7" />
+            <polyline points="14 7 21 7 21 14" />
+          </svg>
+        </div>
+        <div>
+          <p class="analytics-card-label">Active Learners</p>
+          <p class="analytics-card-value">2</p>
+        </div>
+      </article>
+
+      <article class="analytics-card analytics-card-admins">
+        <div class="analytics-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="7" r="4" />
+            <path d="M6 21v-2a6 6 0 0 1 12 0v2" />
+          </svg>
+        </div>
+        <div>
+          <p class="analytics-card-label">Admins</p>
+          <p class="analytics-card-value">1</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- User table -->
+    <section class="analytics-table-wrap" aria-label="User progress table">
+      <div class="analytics-table-header">User Progress</div>
+      <div class="analytics-table-scroll">
+        <table class="analytics-table">
+          <thead>
+            <tr>
+              <th scope="col">User</th>
+              <th scope="col">Email</th>
+              <th scope="col">Role</th>
+              <th scope="col">Paths Started</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dustin King</td>
+              <td>dustin@example.edu</td>
+              <td>
+                <span class="analytics-role-pill analytics-role-admin">admin</span>
+              </td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Jane Smith</td>
+              <td>jane.smith@example.edu</td>
+              <td>
+                <span class="analytics-role-pill analytics-role-user">member</span>
+              </td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Alex Johnson</td>
+              <td>alex.johnson@example.edu</td>
+              <td>
+                <span class="analytics-role-pill analytics-role-user">member</span>
+              </td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
