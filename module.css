@@ -1,0 +1,121 @@
+/* ============================================
+   Module detail pages (mock content)
+   ============================================ */
+
+.module-main-page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .module-main-page {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .module-main-page {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.module-card {
+  background: white;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+  margin: 0 0 0.75rem 0;
+  color: var(--color-gray-600);
+  font-size: 0.9rem;
+}
+
+.breadcrumbs a {
+  color: var(--color-garnet);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.module-h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-gray-900);
+}
+
+.module-lede {
+  margin-top: 0.5rem;
+  margin-bottom: 1.25rem;
+  color: var(--color-gray-600);
+}
+
+.module-section {
+  margin-top: 1.25rem;
+}
+
+.module-section h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.module-section p {
+  margin: 0.4rem 0;
+  color: var(--color-gray-700);
+}
+
+.module-list {
+  margin: 0.5rem 0 0 1.1rem;
+  color: var(--color-gray-700);
+}
+
+.module-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.module-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 0.9rem;
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.module-cta-primary {
+  background: var(--color-garnet);
+  color: white;
+}
+
+.module-cta-primary:hover {
+  background: var(--color-garnet-dark);
+}
+
+.module-cta-secondary {
+  background: white;
+  color: var(--color-gray-900);
+  border-color: var(--color-gray-200);
+}
+
+.module-cta-secondary:hover {
+  background: var(--color-gray-100);
+}

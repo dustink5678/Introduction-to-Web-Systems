@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Author: Dustin King -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gamecock Consulting Club learning portal demo. Explore firm-specific learning paths, modules, and resources for consulting interview preparation.">
+  <meta name="author" content="Dustin King">
+  <meta property="og:title" content="Consulting Firms | Gamecock Consulting Club">
+  <meta property="og:description" content="Explore firm-specific learning paths, modules, and resources for consulting interview preparation.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <title>Consulting Firms | Gamecock Consulting Club</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body class="page-wrapper">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <div class="nav-flex">
+        <a href="index.html" class="nav-logo-link">
+          <img src="GCC Logo.png" alt="Gamecock Consulting Club" class="nav-logo-img" width="40" height="40">
+          <span class="nav-title">Gamecock Consulting Club</span>
+        </a>
+        <div class="nav-right">
+          <a href="survey.html" class="nav-interest-link">Interested in learning more about the Gamecock Consulting Club? Fill out this survey.</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="dashboard-container" aria-labelledby="dashboard-heading">
+      <div class="dashboard-header">
+        <h1 id="dashboard-heading" class="dashboard-title">Consulting Firms</h1>
+        <p class="dashboard-subtitle">Select a firm to begin your learning journey</p>
+      </div>
+
+      <section id="continue-card" class="continue-card" aria-label="Continue where you left off">
+        <p>Continue your last learning track.</p>
+        <a id="continue-link" href="index.html">Continue</a>
+      </section>
+
+      <div class="firms-grid">
+        <a href="mckinsey.html" class="firm-card">
+          <div class="firm-card-inner">
+            <div class="firm-card-logo">
+              <svg class="firm-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <div class="firm-card-content">
+              <h3 class="firm-card-title">McKinsey &amp; Company</h3>
+              <p class="firm-card-desc">Strategy and management consulting. Prepare with firm-specific modules and case resources.</p>
+            </div>
+            <svg class="firm-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="9 18 15 12 9 6"/>
+            </svg>
+          </div>
+        </a>
+
+        <a href="bcg.html" class="firm-card">
+          <div class="firm-card-inner">
+            <div class="firm-card-logo">
+              <svg class="firm-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <div class="firm-card-content">
+              <h3 class="firm-card-title">BCG</h3>
+              <p class="firm-card-desc">Boston Consulting Group. Explore readings, videos, and quizzes for your interview prep.</p>
+            </div>
+            <svg class="firm-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="9 18 15 12 9 6"/>
+            </svg>
+          </div>
+        </a>
+
+        <a href="bain.html" class="firm-card">
+          <div class="firm-card-inner">
+            <div class="firm-card-logo">
+              <svg class="firm-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <div class="firm-card-content">
+              <h3 class="firm-card-title">Bain &amp; Company</h3>
+              <p class="firm-card-desc">Learn about Bain’s approach and complete training modules at your own pace.</p>
+            </div>
+            <svg class="firm-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="9 18 15 12 9 6"/>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-text">Gamecock Consulting Club — Static portal demo for web systems.</p>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="index.html">Dashboard</a>
+        <a href="survey.html">Survey</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="site.js" defer></script>
+</body>
+</html>

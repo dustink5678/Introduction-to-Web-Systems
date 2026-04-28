@@ -1,0 +1,223 @@
+/* ============================================
+   Shared Components (nav, footer, form, a11y)
+   ============================================ */
+
+/* --- Accessibility helpers --- */
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-lg);
+  background: white;
+  color: var(--color-gray-900);
+  border: 1px solid var(--color-gray-200);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-200%);
+  transition: transform 0.2s ease;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+:focus-visible {
+  outline: 3px solid rgba(115, 0, 10, 0.4);
+  outline-offset: 2px;
+}
+
+/* ============================================
+   NAVBAR
+   ============================================ */
+.site-header {
+  background-color: white;
+  border-bottom: 1px solid var(--color-gray-200);
+  box-shadow: var(--shadow-sm);
+}
+
+.nav-inner {
+  max-width: var(--max-w-7xl);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .nav-inner {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-inner {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 4rem;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.nav-logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  flex-shrink: 0;
+}
+
+.nav-logo-img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.nav-title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--color-gray-900);
+}
+
+@media (max-width: 640px) {
+  .nav-title {
+    display: none;
+  }
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav-user-name {
+  font-size: 0.875rem;
+  color: var(--color-gray-700);
+}
+
+@media (max-width: 640px) {
+  .nav-user-name {
+    display: none;
+  }
+}
+
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: var(--radius-lg);
+  border: 1px solid transparent;
+}
+
+.nav-btn-link {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: var(--color-garnet);
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.nav-btn-link:hover {
+  background-color: var(--color-garnet-dark);
+}
+
+.nav-btn-secondary {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: white;
+  color: var(--color-gray-900);
+  border-color: var(--color-gray-200);
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.nav-btn-secondary:hover {
+  background-color: var(--color-gray-100);
+  border-color: var(--color-gray-300);
+}
+
+.nav-btn-icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.nav-interest-link {
+  color: var(--color-garnet);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.nav-interest-link:hover {
+  color: var(--color-garnet-dark);
+}
+
+@media (max-width: 640px) {
+  .nav-btn-text {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-right {
+    width: 100%;
+  }
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+.site-footer {
+  border-top: 1px solid var(--color-gray-200);
+  background: white;
+  margin-top: 2rem;
+}
+
+.footer-inner {
+  max-width: var(--max-w-7xl);
+  margin: 0 auto;
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-text {
+  margin: 0;
+  color: var(--color-gray-600);
+  font-size: 0.875rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--color-garnet);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
